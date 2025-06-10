@@ -21,6 +21,11 @@ You will build a web application that demonstrates your proficiency in:
 docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
 ```
 
+Create .env with this field
+```
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/fullstack_homework?schema=public"
+```
+
 - Choose and implement a database connection method:
   - Direct database connection using [`postgres`](https://github.com/porsager/postgres) or any other client
   - ORM (Prisma, Drizzle, or TypeORM) for schema management and connection only
